@@ -2,3 +2,16 @@
 //0, 7, 8, -2, -2 -> 2
 //1, -7, 567, 89, 223-> 3
 
+Console.Write("Введите элементы(через пробел): ");
+int[] mass = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+int count = 0;
+ 
+for (int i = 0; i < mass.Length; i++)
+{
+    if (mass[i] > 0)
+    {
+        count++;
+    }
+}
+ 
+Console.WriteLine($"Кол-во элементов больше 0: {count}");
