@@ -9,9 +9,6 @@ double k1 = mass[0];
 double k2 = mass[1];
 double b1 = mass[2];
 double b2 = mass[3];
-int Len = mass.Length;
-//double x = -(b1 - b2) / (k1 - k2);
-//double y = k1 * x + b1;
 Uravnenie (mass);
 
 
