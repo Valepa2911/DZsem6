@@ -4,14 +4,17 @@
 
 Console.Write("Введите элементы(через пробел): ");
 int[] mass = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
-int count = 0;
- 
-for (int i = 0; i < mass.Length; i++)
+
+int Bolshe(int[] mass)
 {
+    int count = 0;
+    for (int i = 0; i < mass.Length; i++)
+
     if (mass[i] > 0)
     {
         count++;
     }
+    return count;
 }
  
-Console.WriteLine($"Кол-во элементов больше 0: {count}");
+Console.WriteLine($"Кол-во элементов больше 0: {Bolshe (mass)}");
